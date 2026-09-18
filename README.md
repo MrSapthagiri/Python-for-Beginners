@@ -1,3 +1,5 @@
+<img width="1890" height="800" alt="image" src="https://github.com/user-attachments/assets/16c5bf00-a5ac-42f9-aca7-617f319dbaae" />
+
 # Python for Beginners
 
 This is the complete beginner-friendly Python course notes for the learning path covered in this workspace.

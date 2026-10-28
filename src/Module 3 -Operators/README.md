@@ -6,7 +6,7 @@ This module covers the operators used in Python to perform calculations, compare
 
 Topics included:
 
-1. Arithmetic operators
+1. Arithmetic operators/
 2. Assignment operators
 3. Comparison operators
 4. Logical operators (`and`, `or`, `not`)
@@ -74,6 +74,8 @@ These combine assignment with arithmetic.
 | Operator | Example | Meaning |
 |----------|---------|---------|
 | `=` | `x = 5` | Assign `5` to `x` |
+
+
 | `+=` | `x += 3` | `x = x + 3` |
 | `-=` | `x -= 2` | `x = x - 2` |
 | `*=` | `x *= 4` | `x = x * 4` |
@@ -108,11 +110,11 @@ Comparison operators compare two values and return a boolean result: `True` or `
 
 | Operator | Meaning               |  Example | Result |
 |----------|-----------------------|------- --|--------|
-|   `==`   | Equal to              | `5 == 5` | `True` |
+|   `==`   | Equal to              | `5 == 5` | `True` |    "5" == 5
 |   `!=`   | Not equal to          | `5 != 3` | `True` |
-|   `>`    | Greater than          | `8 > 3`  | `True` |
+|   `>`    | Greater than          | `8 > 3`  | `True` | 
 |   `<`    | Less than             | `2 < 6`  | `True` |
-|   `>=`   | Greater than or equal | `7 >= 7` | `True` |
+|   `>=`   | Greater than or equal | `7 >= 7` | `True` | 
 |   `<=`   | Less than or equal    | `4 <= 5` | `True` |
 
 ## Example
@@ -144,7 +146,7 @@ print(x == 5)   # comparison
 
 Logical operators combine conditions and return `True` or `False`.
 
-## `and`
+## `and` 
 
 Returns `True` only if both conditions are true.
 
@@ -152,7 +154,7 @@ Returns `True` only if both conditions are true.
 age = 25
 income = 50000
 
-print(age > 18 and income > 30000)   # True
+print(age > 18 and income > 30000)   # True  
 ```
 
 ## `or`
@@ -229,7 +231,7 @@ print(8 not in numbers)   # True
 Membership checks are useful for:
 - checking letters in a word
 - checking items in a list
-- checking usernames in a set
+- checking usernames in a set 
 
 ---
 
@@ -242,7 +244,7 @@ Identity operators compare whether two objects are the same object in memory.
 Returns `True` if both variables refer to the same object.
 
 ```python
-a = [1, 2, 3]
+a = [1, 2, 3]  
 b = a
 print(a is b)   # True
 ```
@@ -278,7 +280,7 @@ Operator precedence decides the order in which Python evaluates operations in an
 ## Example
 
 ```python
-result = 10 + 3 * 2
+result = 10 + 3 * 2 
 print(result)  # 16
 ```
 

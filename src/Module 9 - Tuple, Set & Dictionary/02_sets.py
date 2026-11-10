@@ -39,7 +39,7 @@ print("\nExample 2 - Unique values:", sorted(numbers))
 
 # Example 3: Create an empty set
 # Explanation: set() creates an empty set; {} creates an empty dictionary.
-empty_set = set()
+empty_set: set[object] = set()
 print("\nExample 3 - Empty set:", empty_set)
 # Output: Example 3 - Empty set: set()
 

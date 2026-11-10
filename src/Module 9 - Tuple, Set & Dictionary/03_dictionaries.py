@@ -1,3 +1,6 @@
+"""Examples of creating and using Python dictionaries."""
+# pylint: disable=invalid-name
+
 # Module 9: Dictionaries — Creation and Basic Operations
 # ======================================================
 #
@@ -36,8 +39,9 @@ print("\nExample 2 - Name:", student["name"])
 
 
 # Example 3: Add a new key-value pair
-# Explanation: Assigning a value to a new key adds it to the dictionary.
 student = {"name": "Asha"}
+# Explanation: Assigning a value to a new key adds it to the dictionary.
+student: dict[str, str | int] = {"name": "Asha"}
 student["age"] = 18
 print("\nExample 3 - After adding age:", student)
 # Output: Example 3 - After adding age: {'name': 'Asha', 'age': 18}
@@ -61,7 +65,7 @@ print("\nExample 5 - After deleting grade:", student)
 
 # Example 6: Update multiple entries with update()
 # Explanation: update() adds new keys and replaces values for existing keys.
-profile = {"name": "Asha", "city": "Pune"}
+profile: dict[str, str | bool] = {"name": "Asha", "city": "Pune"}
 profile.update({"city": "Mumbai", "active": True})
 print("\nExample 6 - Updated profile:", profile)
 # Output: Example 6 - Updated profile: {'name': 'Asha', 'city': 'Mumbai', 'active': True}

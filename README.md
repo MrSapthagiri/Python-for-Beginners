@@ -10,6 +10,11 @@ This is the complete beginner-friendly Python course notes for the learning path
 - Module 2: Variables & Data Types
 - Module 3: Operators
 - Module 4: Input & Output
+- Module 5: Conditional Statements
+- Module 6: Loops
+- Module 7: Strings
+- Module 8: Lists
+- Module 9: Tuple, Set & Dictionary
 
 ## Module 1: Python Installation & Environment
 
@@ -376,6 +381,28 @@ See module notes: [src/Module 4 -Input & Output/README.md](src/Module%204%20-Inp
 
 ---
 
+## Module 8: Lists
+
+This module covers creating and updating lists, adding and removing elements,
+common list methods, nested lists, iteration, and list comprehensions. Each
+topic has its own explained Python file with runnable examples and expected
+output.
+
+See module notes: [src/Module 8 - Lists/README.md](src/Module%208%20-%20Lists/README.md)
+
+---
+
+## Module 9: Tuple, Set & Dictionary
+
+This module covers tuples, sets and their common operations, dictionaries and
+their basic operations, and the `keys()`, `values()`, `items()`, and `get()`
+dictionary methods. Each topic has its own explained Python file with runnable
+examples and expected output.
+
+See module notes: [src/Module 9 - Tuple, Set & Dictionary/README.md](src/Module%209%20-%20Tuple%2C%20Set%20%26%20Dictionary/README.md)
+
+---
+
 ## Learning Progress
 
 The beginner course in this workspace covers:
@@ -383,14 +410,12 @@ The beginner course in this workspace covers:
 - Python environment setup
 - Variables and data types
 - Operators and expressions
-
-These concepts are the foundation for future modules like:
-
+- Input and output
 - Conditional statements
 - Loops
-- Functions
-- Lists and strings
-- Files and modules
+- Strings
+- Lists
+- Tuples, sets, and dictionaries
 
 ---
 

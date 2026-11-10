@@ -32,7 +32,7 @@ print("Example 1 - Set values:", sorted(colors))
 
 # Example 2: Sets keep only unique values
 # Explanation: Repeated values are reduced to one occurrence.
-numbers = {1, 2, 2, 3, 3, 3}
+numbers = {1, 2, 3}
 print("\nExample 2 - Unique values:", sorted(numbers))
 # Output: Example 2 - Unique values: [1, 2, 3]
 

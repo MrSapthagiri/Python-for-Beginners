@@ -14,6 +14,17 @@
 # - A nested list can represent rows and columns, such as a small table.
 # - A loop over the outer list visits each inner list.
 # - A nested loop can then visit every item in each inner list.
+# - Row and column indexes start at zero.
+# - Rows do not have to be the same length, but code must not assume a column
+#   exists in every row unless the data is known to be rectangular.
+# - Iterating over items directly is usually clearer than manually using indexes.
+#
+# LOOP TRACE
+# For grid = [[1, 2], [3, 4]]:
+# - The outer loop first assigns [1, 2] to row.
+# - The inner loop prints 1, then 2.
+# - The outer loop next assigns [3, 4] to row.
+# - The inner loop prints 3, then 4.
 
 
 # Example 1: Access an item in a nested list
@@ -75,8 +86,57 @@ print("\nExample 5 - Total sales:", total)
 # Output: Example 5 - Total sales: 70
 
 
+# Example 6: Iterate with indexes using enumerate()
+# Explanation: enumerate() supplies both the zero-based row index and the row.
+students = [["Asha", 18], ["Ravi", 19]]
+print("\nExample 6 - Students with row numbers:")
+for index, student in enumerate(students):
+    print(index, student[0])
+# Output:
+# Example 6 - Students with row numbers:
+# 0 Asha
+# 1 Ravi
+
+
+# Example 7: Process rows that have different lengths
+# Explanation: Loop through the values that are actually present in each row.
+# This does not assume every row has the same number of columns.
+data = [[1, 2], [3], [4, 5, 6]]
+row_totals = []
+for row in data:
+    row_total = 0
+    for value in row:
+        row_total += value
+    row_totals.append(row_total)
+print("\nExample 7 - Total for each row:", row_totals)
+# Output: Example 7 - Total for each row: [3, 3, 15]
+
+
+# Example 8: Find a value in a nested list
+# Explanation: A flag records whether the value has been seen while visiting
+# rows. The loop stops as soon as the value is found.
+grid = [[1, 2], [3, 4]]
+target = 3
+found = False
+for row in grid:
+    if target in row:
+        found = True
+        break
+print("\nExample 8 - Target found:", found)
+# Output: Example 8 - Target found: True
+
+
+# COMMON MISTAKES
+# - grid[0][1] means row 0, column 1; reversing these indexes accesses a
+#   different value.
+# - A nested loop is required to visit every value in a nested list.
+# - Avoid changing the list structure while directly iterating over it, because
+#   adding or removing items can make the loop skip or revisit values.
+
+
 # QUICK REVISION
 # - Nested list example: matrix = [[1, 2], [3, 4]]
 # - Access a row: matrix[0]
 # - Access a value: matrix[0][1]
 # - Use one loop per nesting level to visit every value.
+# - Use enumerate(items) when both index and item are needed.

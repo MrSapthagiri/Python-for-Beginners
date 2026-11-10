@@ -14,10 +14,24 @@
 #
 # IMPORTANT NOTES
 # - append() adds its argument as one item. To add several items individually,
-#   use extend(), which is not covered in this lesson.
+#   use extend(). For example, [1, 2].append([3, 4]) produces [1, 2, [3, 4]],
+#   while [1, 2].extend([3, 4]) produces [1, 2, 3, 4].
 # - insert() places an item at an index; existing items at and after it move.
+#   An index larger than the list length inserts at the end; a negative index
+#   counts from the end.
 # - remove() searches by value, while pop() removes by position.
 # - pop() on an empty list raises IndexError.
+# - remove() raises ValueError when no matching value exists.
+# - Use "value in items" before remove() if the item may be absent.
+# - These methods change the existing list. They do not return a new list.
+#
+# WHICH METHOD SHOULD I USE?
+# - Add one item at the end: append(value)
+# - Add several items from an iterable: extend(iterable)
+# - Insert one item at a chosen position: insert(index, value)
+# - Remove a known value: remove(value)
+# - Remove an item at a known position and keep it: pop(index)
+# - Remove the last item and keep it: pop()
 
 
 # Example 1: append()
@@ -76,8 +90,52 @@ print("\nExample 6 - Remaining tasks:", tasks)
 # Output: Example 6 - Remaining tasks: ['read']
 
 
+# Example 7: append() adds one object; extend() adds each item
+# Explanation: append() treats its argument as one item. extend() iterates over
+# its argument and adds the argument's items separately.
+appended = [1, 2]
+appended.append([3, 4])
+extended = [1, 2]
+extended.extend([3, 4])
+print("\nExample 7 - append a list:", appended)
+print("Example 7 - extend with a list:", extended)
+# Output:
+# Example 7 - append a list: [1, 2, [3, 4]]
+# Example 7 - extend with a list: [1, 2, 3, 4]
+
+
+# Example 8: Remove repeated values one at a time
+# Explanation: remove() removes only the first matching value each time it is
+# called. The while loop continues while another match remains.
+numbers = [2, 1, 2, 3, 2]
+while 2 in numbers:
+    numbers.remove(2)
+print("\nExample 8 - All twos removed:", numbers)
+# Output: Example 8 - All twos removed: [1, 3]
+
+
+# Example 9: Use pop() to process items from the end
+# Explanation: pop() returns the removed item, so it can be stored and used.
+queue = ["first", "second", "third"]
+last_item = queue.pop()
+print("\nExample 9 - Processed item:", last_item)
+print("Example 9 - Remaining queue:", queue)
+# Output:
+# Example 9 - Processed item: third
+# Example 9 - Remaining queue: ['first', 'second']
+
+
+# COMMON ERRORS
+# - Calling remove(value) for a missing value raises ValueError. Check with
+#   "if value in items" when absence is expected.
+# - Calling pop(index) with an invalid index, or calling pop() on an empty list,
+#   raises IndexError.
+# - Do not assume append() combines two lists; it adds its argument as one item.
+
+
 # QUICK REVISION
 # - Add at the end: items.append(value)
 # - Add at a position: items.insert(index, value)
+# - Add every item from another iterable: items.extend(iterable)
 # - Remove first matching value: items.remove(value)
 # - Remove and return an item: items.pop(index)

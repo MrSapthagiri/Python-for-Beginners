@@ -15,6 +15,7 @@ This is the complete beginner-friendly Python course notes for the learning path
 - Module 7: Strings
 - Module 8: Lists
 - Module 9: Tuple, Set & Dictionary
+- Module 10: Functions
 
 ## Module 1: Python Installation & Environment
 
@@ -403,6 +404,16 @@ See module notes: [src/Module 9 - Tuple, Set & Dictionary/README.md](src/Module%
 
 ---
 
+## Module 10: Functions
+
+This module covers creating and calling functions, parameters and arguments,
+return values, default and keyword arguments, variable scope, `*args`,
+`**kwargs`, lambda functions, and reusable function design.
+
+See module notes: [src/Module 10 - Functions/README.md](src/Module%2010%20-%20Functions/README.md)
+
+---
+
 ## Learning Progress
 
 The beginner course in this workspace covers:
@@ -416,6 +427,7 @@ The beginner course in this workspace covers:
 - Strings
 - Lists
 - Tuples, sets, and dictionaries
+- Functions
 
 ---
 

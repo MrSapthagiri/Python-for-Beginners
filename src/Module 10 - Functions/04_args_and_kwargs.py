@@ -9,8 +9,6 @@
 # Example 1: Gather extra positional arguments
 def show_fruits(*fruits):
     print(fruits)
-
-
 show_fruits("apple", "banana", "orange")
 # Output: ('apple', 'banana', 'orange')
 
@@ -19,8 +17,6 @@ show_fruits("apple", "banana", "orange")
 def list_tasks(*tasks):
     for task in tasks:
         print("new", task)
-
-
 list_tasks("read", "practice", "review")
 # Output:
 # - read

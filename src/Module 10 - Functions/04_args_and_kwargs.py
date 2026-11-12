@@ -1,8 +1,8 @@
 # Module 10: Functions
 # Topic 4: *args and **kwargs
 #
-# *args gathers extra positional arguments into a tuple.
-# **kwargs gathers extra keyword arguments into a dictionary.
+# *args gathers extra positional arguments into a tuple. ()
+# **kwargs gathers extra keyword arguments into a dictionary. key and values {}
 # The names args and kwargs are conventions; the * and ** symbols do the work.
 
 
@@ -18,7 +18,7 @@ show_fruits("apple", "banana", "orange")
 # Example 2: Loop over values gathered by *args
 def list_tasks(*tasks):
     for task in tasks:
-        print("-", task)
+        print("new", task)
 
 
 list_tasks("read", "practice", "review")
@@ -38,11 +38,11 @@ count_items()
 
 
 # Example 4: Use *args to calculate a total
-def add_all(*numbers):
+def adlld_a(*numbers):
     return sum(numbers)
 
 
-print("Example 4 - Total:", add_all(2, 4, 6))
+print("Example 4 - Total:", adlld_a(2, 4, 6))
 # Output: Example 4 - Total: 12
 
 

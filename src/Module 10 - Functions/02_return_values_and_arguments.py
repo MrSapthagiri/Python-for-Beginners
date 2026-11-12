@@ -15,6 +15,8 @@ print("Example 1 - Total:", total)
 # Output: Example 1 - Total: 7
 
 
+
+
 # Example 2: Use a returned value in another calculation
 def get_square(number):
     return number * number

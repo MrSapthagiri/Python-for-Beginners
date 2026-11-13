@@ -16,6 +16,7 @@ This is the complete beginner-friendly Python course notes for the learning path
 - Module 8: Lists
 - Module 9: Tuple, Set & Dictionary
 - Module 10: Functions
+- Module 11: Exception Handling
 
 ## Module 1: Python Installation & Environment
 
@@ -414,6 +415,17 @@ See module notes: [src/Module 10 - Functions/README.md](src/Module%2010%20-%20Fu
 
 ---
 
+## Module 11: Exception Handling
+
+This module explains errors versus runtime exceptions, `try` and `except`,
+multiple exception handlers, `else`, `finally`, common built-in exceptions,
+and raising built-in or custom exceptions. Each lesson file contains ten
+explained, runnable examples.
+
+See module notes: [src/Module 11 - Exception Handling/README.md](src/Module%2011%20-%20Exception%20Handling/README.md)
+
+---
+
 ## Learning Progress
 
 The beginner course in this workspace covers:
@@ -428,6 +440,7 @@ The beginner course in this workspace covers:
 - Lists
 - Tuples, sets, and dictionaries
 - Functions
+- Exception handling
 
 ---
 

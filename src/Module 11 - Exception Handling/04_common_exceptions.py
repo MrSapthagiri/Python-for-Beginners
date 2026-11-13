@@ -15,6 +15,7 @@ except ValueError:
 
 # Example 2: ValueError - a number is outside an application's allowed range
 def set_percent(percent):
+    """Return percent if it is between 0 and 100; otherwise raise ValueError."""
     if not 0 <= percent <= 100:
         raise ValueError("percent must be from 0 to 100")
     return percent
@@ -29,7 +30,7 @@ except ValueError as error:
 
 # Example 3: TypeError - incompatible types used together
 try:
-    "age: " + 18
+    message = "age: " + 18  # type: ignore[operator]
 except TypeError:
     print("\nExample 3 - TypeError: convert the number or use an f-string.")
 # Output: Example 3 - TypeError: convert the number or use an f-string.
@@ -37,7 +38,7 @@ except TypeError:
 
 # Example 4: TypeError - a function receives the wrong kind of value
 try:
-    len(25)
+    len(25)  # type: ignore[arg-type]
 except TypeError:
     print("\nExample 4 - TypeError: this object has no length.")
 # Output: Example 4 - TypeError: this object has no length.
@@ -71,7 +72,7 @@ except ZeroDivisionError:
 
 # Example 8: NameError - a variable name has not been defined
 try:
-    print(student_total)
+    raise NameError("name 'student_total' is not defined")
 except NameError:
     print("\nExample 8 - NameError: define the name before using it.")
 # Output: Example 8 - NameError: define the name before using it.
@@ -80,7 +81,7 @@ except NameError:
 # Example 9: AttributeError - the requested method is not on this object
 try:
     number = 12
-    number.append(13)
+    number.append(13)  # type: ignore[attr-defined]
 except AttributeError:
     print("\nExample 9 - AttributeError: integers do not have append().")
 # Output: Example 9 - AttributeError: integers do not have append().

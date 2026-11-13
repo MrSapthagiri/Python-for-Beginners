@@ -1,3 +1,8 @@
+"""Demonstrate handling common exceptions with try and except."""
+
+from typing import Any, cast
+
+# pylint: disable=invalid-name
 # Module 11: Exception Handling
 # Topic 2: try and except
 #
@@ -83,7 +88,7 @@ else:
 
 # Example 9: Only the named exception is handled
 try:
-    "score: " + 10
+    message = "score: " + cast(Any, 10)
 except ValueError:
     print("\nExample 9 - This handles invalid values.")
 except TypeError:

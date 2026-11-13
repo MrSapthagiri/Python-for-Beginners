@@ -56,7 +56,7 @@ except KeyError as error:
 
 # Example 7: Dividing a number by zero raises ZeroDivisionError
 try:
-    10 / 0
+    _ = 10 / 0
 except ZeroDivisionError as error:
     print("\nExample 7 - Exception type:", type(error).__name__)
 # Output: Example 7 - Exception type: ZeroDivisionError
@@ -72,7 +72,7 @@ except NameError as error:
 
 # Example 9: Calling a string-only method on an integer raises AttributeError
 try:
-    getattr(42, "upper")()
+    _ = (42).upper()  # type: ignore[attr-defined, reportAttributeAccessIssue]
 except AttributeError as error:
     print("\nExample 9 - Exception type:", type(error).__name__)
 # Output: Example 9 - Exception type: AttributeError

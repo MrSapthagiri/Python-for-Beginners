@@ -31,13 +31,11 @@ except (TypeError, ValueError) as error:
 # Output: Example 2 - Invalid input: ValueError
 
 
-# Example 3: Put a more specific handler before a general one
+# Example 3: Catch the specific exception you expect
 try:
-    {}["missing"]
+    {"present": "value"}["missing"]
 except KeyError:
     print("\nExample 3 - The requested key is missing.")
-except Exception:
-    print("\nExample 3 - Another exception occurred.")
 # Output: Example 3 - The requested key is missing.
 
 

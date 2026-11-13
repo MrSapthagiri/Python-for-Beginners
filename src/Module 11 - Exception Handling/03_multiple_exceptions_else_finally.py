@@ -8,6 +8,7 @@
 
 # Example 1: Different handlers respond to different exception types
 def divide_text(top_text, bottom_text):
+    """Divide two whole-number strings, returning a message for invalid input."""
     try:
         return int(top_text) / int(bottom_text)
     except ValueError:
@@ -71,7 +72,7 @@ finally:
 
 # Example 7: finally also runs after a handled exception
 try:
-    3 / 0
+    _ = 3 / 0
 except ZeroDivisionError:
     print("\nExample 7 - Could not divide.")
 finally:
@@ -83,11 +84,11 @@ finally:
 
 # Example 8: Combine try, except, else, and finally
 try:
-    score = int("92")
+    SCORE = int("92")
 except ValueError:
     print("\nExample 8 - Score must be a whole number.")
 else:
-    print("\nExample 8 - Saved score:", score)
+    print("\nExample 8 - Saved score:", SCORE)
 finally:
     print("Example 8 - Score check finished.")
 # Output:
@@ -98,7 +99,7 @@ finally:
 # Example 9: A finally block does not hide an unhandled exception
 try:
     try:
-        5 / 0
+        _ = 5 / 0
     except ValueError:
         print("\nExample 9 - This handler does not match.")
     finally:
@@ -112,6 +113,7 @@ except ZeroDivisionError as error:
 
 # Example 10: Handle expected conversion errors, then use else for success
 def describe_number(text):
+    """Return a formatted number, or a message for invalid input."""
     try:
         value = float(text)
     except (TypeError, ValueError):

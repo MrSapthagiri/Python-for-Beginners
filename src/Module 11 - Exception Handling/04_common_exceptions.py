@@ -80,8 +80,8 @@ except NameError:
 
 # Example 9: AttributeError - the requested method is not on this object
 try:
-    number = 12
-    number.append(13)  # type: ignore[attr-defined]
+    NUMBER = 12
+    NUMBER.append(13)  # type: ignore[attr-defined]
 except AttributeError:
     print("\nExample 9 - AttributeError: integers do not have append().")
 # Output: Example 9 - AttributeError: integers do not have append().
@@ -89,7 +89,8 @@ except AttributeError:
 
 # Example 10: FileNotFoundError - the requested file does not exist
 try:
-    open("this_file_is_not_part_of_the_lesson.txt", encoding="utf-8")
+    with open("this_file_is_not_part_of_the_lesson.txt", encoding="utf-8") as file:
+        pass
 except FileNotFoundError:
     print("\nExample 10 - FileNotFoundError: the file was not found.")
 # Output: Example 10 - FileNotFoundError: the file was not found.

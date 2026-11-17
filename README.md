@@ -17,6 +17,8 @@ This is the complete beginner-friendly Python course notes for the learning path
 - Module 9: Tuple, Set & Dictionary
 - Module 10: Functions
 - Module 11: Exception Handling
+- Module 12: File Handling
+- Module 13: Modules & Packages
 
 ## Module 1: Python Installation & Environment
 
@@ -426,6 +428,28 @@ See module notes: [src/Module 11 - Exception Handling/README.md](src/Module%2011
 
 ---
 
+## Module 12: File Handling
+
+This module covers creating and opening files, file modes, closing files,
+reading with `read()`, `readline()`, and `readlines()`, writing and appending,
+using `with open()` and handling file exceptions, and working with text and
+CSV files. Each topic has an explained, runnable Python example.
+
+See module notes: [src/Module 12 - File Handling/README.md](src/Module%2012%20-%20File%20Handling/README.md)
+
+---
+
+## Module 13: Modules & Packages
+
+This module covers `import` and `from ... import`, standard-library modules
+such as `math`, `random`, and `datetime`, reusable custom modules, packages,
+and project dependency management with `pip`, virtual environments, and
+`requirements.txt`.
+
+See module notes: [src/Module 13 - Modules & Packages/README.md](src/Module%2013%20-%20Modules%20&%20Packages/README.md)
+
+---
+
 ## Learning Progress
 
 The beginner course in this workspace covers:
@@ -441,6 +465,8 @@ The beginner course in this workspace covers:
 - Tuples, sets, and dictionaries
 - Functions
 - Exception handling
+- File handling
+- Modules and packages
 
 ---
 

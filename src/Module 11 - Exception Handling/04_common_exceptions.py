@@ -30,9 +30,9 @@ except ValueError as error:
 
 # Example 3: TypeError - incompatible types used together
 try:
-    message = "age: " + 18  # type: ignore[operator]
+    message = "age: " + str(18)  # type: ignore[operator]
 except TypeError:
-    print("\nExample 3 - TypeError: convert the number or use an f-string.")
+    print(f"\nExample 3 - TypeError: convert the number or use an f-string.")
 # Output: Example 3 - TypeError: convert the number or use an f-string.
 
 

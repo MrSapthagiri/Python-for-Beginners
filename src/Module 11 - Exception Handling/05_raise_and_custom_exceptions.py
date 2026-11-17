@@ -8,7 +8,7 @@
 
 # Example 1: Raise ValueError when a number is below zero
 def set_temperature(celsius):
-    if celsius < 0:
+    if celsius < 0: # -1 < 0
         raise ValueError("temperature must not be below zero")
     return celsius
 

@@ -1,5 +1,3 @@
-"""Demonstrate write(), writelines(), and append mode."""
-
 from pathlib import Path
 from tempfile import TemporaryDirectory
 

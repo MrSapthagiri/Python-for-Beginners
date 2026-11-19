@@ -19,6 +19,7 @@ This is the complete beginner-friendly Python course notes for the learning path
 - Module 11: Exception Handling
 - Module 12: File Handling
 - Module 13: Modules & Packages
+- Module 14: OOP Fundamentals
 
 ## Module 1: Python Installation & Environment
 
@@ -450,6 +451,16 @@ See module notes: [src/Module 13 - Modules & Packages/README.md](src/Module%2013
 
 ---
 
+## Module 14: OOP Fundamentals
+
+This module introduces object-oriented programming concepts, classes and
+objects, attributes and methods, constructors, `self`, instance variables,
+instance methods, class variables, and working with multiple objects.
+
+See module notes: [src/Module 14 - OOP Fundamentals/README.md](src/Module%2014%20-%20OOP%20Fundamentals/README.md)
+
+---
+
 ## Learning Progress
 
 The beginner course in this workspace covers:
@@ -467,6 +478,7 @@ The beginner course in this workspace covers:
 - Exception handling
 - File handling
 - Modules and packages
+- OOP fundamentals
 
 ---
 

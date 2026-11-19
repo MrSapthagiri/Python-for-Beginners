@@ -3,11 +3,19 @@
 
 
 class Rectangle:
+    """Represent a rectangle with width and height dimensions."""
+
+    def __init__(self):
+        self.width = 0
+        self.height = 0
+
     def set_dimensions(self, width, height):
+        """Set the rectangle's width and height."""
         self.width = width
         self.height = height
 
     def area(self):
+        """Calculate and return the rectangle's area."""
         return self.width * self.height
 
 
@@ -42,10 +50,14 @@ print("Example 6 - Updated area:", rectangle.area())
 
 # Example 7: Methods can return calculated values.
 class Temperature:
+    """Represent a temperature in Celsius and convert it to Fahrenheit."""
+
     def set_celsius(self, celsius):
+        """Set the temperature in Celsius."""
         self.celsius = celsius
 
     def to_fahrenheit(self):
+        """Convert the temperature from Celsius to Fahrenheit."""
         return (self.celsius * 9 / 5) + 32
 
 
@@ -60,6 +72,7 @@ class Counter:
         self.value = value
 
     def description(self):
+        """Return a text description of the counter value."""
         return f"Counter value: {self.value}"
 
 

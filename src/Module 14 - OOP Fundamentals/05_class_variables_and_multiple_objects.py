@@ -2,7 +2,8 @@
 # Topic 5: Class variables and multiple objects
 
 
-class Employee:
+class Employee:  # pylint: disable=too-few-public-methods
+    """Represent an employee and track shared employee data."""
     company = "Tech Academy"
     employee_count = 0
 
@@ -48,7 +49,7 @@ print("Example 7 - Names:",
 
 # Example 8: A mutable class value can be misleading for object data.
 class Team:
-    members = []
+    members: list[str] = []
 
     def __init__(self, name):
         self.name = name

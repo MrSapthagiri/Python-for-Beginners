@@ -20,6 +20,7 @@ This is the complete beginner-friendly Python course notes for the learning path
 - Module 12: File Handling
 - Module 13: Modules & Packages
 - Module 14: OOP Fundamentals
+- Module 15: OOP Concepts
 
 ## Module 1: Python Installation & Environment
 
@@ -461,6 +462,17 @@ See module notes: [src/Module 14 - OOP Fundamentals/README.md](src/Module%2014%2
 
 ---
 
+## Module 15: OOP Concepts
+
+This module covers encapsulation, public and private naming conventions,
+inheritance, `super()`, polymorphism, method overriding, abstraction,
+abstract classes and methods, class methods, static methods, and basic OOP
+design.
+
+See module notes: [src/Module 15 - OOP Concepts/README.md](src/Module%2015%20-%20OOP%20Concepts/README.md)
+
+---
+
 ## Learning Progress
 
 The beginner course in this workspace covers:
@@ -479,6 +491,7 @@ The beginner course in this workspace covers:
 - File handling
 - Modules and packages
 - OOP fundamentals
+- OOP concepts
 
 ---
 
